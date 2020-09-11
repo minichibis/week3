@@ -12,8 +12,10 @@ GameObject:
   - component: {fileID: 3791996862984486087}
   - component: {fileID: 3791996862983240519}
   - component: {fileID: 2939894179503701104}
+  - component: {fileID: 2813247005371244105}
   - component: {fileID: 4257081927256070682}
   - component: {fileID: 1616015155717784548}
+  - component: {fileID: 6715217352067281076}
   m_Layer: 0
   m_Name: Food_Fish_Cooked
   m_TagString: Untagged
@@ -91,8 +93,20 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.26173592, y: 0.13675982, z: 0.4304055}
+  m_Size: {x: 0.6, y: 0.2, z: 0.8}
   m_Center: {x: 0, y: 0.1, z: 0}
+--- !u!114 &2813247005371244105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3791996862985462777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f97da8064975af9428c2f8f6a239741f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4257081927256070682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,3 +136,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6715217352067281076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3791996862985462777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f365d08871a2b84cab75e46efb2be3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
