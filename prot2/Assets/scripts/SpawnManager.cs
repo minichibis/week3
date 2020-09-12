@@ -6,14 +6,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpawnManager : MonoBehaviour
 {
 	private int timer = 30;
 	public GameObject[] spawnables;
-    // Update is called once per frame
+
     void Update() {
-        timer--;
+        if(!GetComponent<HealthSystem>().gameOver)timer--;
 		if(timer <= 0){
 			timer = Random.Range(10, 40);
 			SpawnDude();

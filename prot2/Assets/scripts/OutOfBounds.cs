@@ -10,7 +10,8 @@ using UnityEngine;
 public class OutOfBounds : MonoBehaviour
 {
 	private int max = 20;
-	private int min = -10;
+	private int min = -5;
+	public int score = 0;
 	
     // Update is called once per frame
     void Update()
@@ -20,7 +21,7 @@ public class OutOfBounds : MonoBehaviour
 			Destroy(gameObject);
 		}else if(transform.position.z < min){
 			//evil creature
-			Debug.Log("Game Over!");
+			GameObject.FindGameObjectWithTag("score").GetComponent<HealthSystem>().TakeDamage();
 			Destroy(gameObject);
 		}
     }

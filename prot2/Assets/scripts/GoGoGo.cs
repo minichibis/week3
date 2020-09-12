@@ -10,6 +10,7 @@ using UnityEngine;
 public class GoGoGo : MonoBehaviour
 {
 	public float speed = 40;
+	public int score = 100;
     // Update is called once per frame
     void Update()
     {
